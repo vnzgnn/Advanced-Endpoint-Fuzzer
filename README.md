@@ -1,22 +1,5 @@
 # Advanced Endpoint Fuzzer
 
-## Project Structure
-
-```
-advanced-endpoint-fuzzer/
-│
-├── fuzzer.py
-├── README.md
-└── requirements.txt
-```
-
-## File Contents
-
-### README.md
-
-```markdown
-# Advanced Endpoint Fuzzer
-
 Advanced Endpoint Fuzzer is an asynchronous tool designed to discover and test API endpoints. It offers high performance, customizable options, and detailed reporting.
 
 ## Features
@@ -48,40 +31,55 @@ Advanced Endpoint Fuzzer is an asynchronous tool designed to discover and test A
 
 ## Usage
 
-Basic usage:
+### Basic Usage
+
+To start fuzzing with default options:
 
 ```
 python fuzzer.py https://api.example.com
 ```
 
-Advanced usage:
+### Advanced Usage
+
+For more control over the fuzzing process:
 
 ```
 python fuzzer.py https://api.example.com --wordlist custom_wordlist.txt --rate-limit 10 --concurrency 5 --output results.json --verbose
 ```
 
-For more options, use the help command:
+### Options
+
+- `--wordlist`: Path to a custom wordlist file
+- `--rate-limit`: Number of requests per second
+- `--concurrency`: Number of concurrent requests
+- `--output`: File to save the results in JSON format
+- `--verbose`: Enable verbose output
+- `--ignore-ssl`: Ignore SSL certificate validation
+
+For a complete list of options:
 
 ```
 python fuzzer.py --help
 ```
 
+## Output
+
+The fuzzer provides real-time output during the fuzzing process and a summary at the end. If specified, a detailed JSON report is saved to the output file.
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
 ## License
 
 This project is licensed under the MIT License.
-```
 
-### requirements.txt
+## Disclaimer
 
-```
-aiohttp==3.8.4
-rich==13.3.5
-```
-
-### fuzzer.py
-
-This file will contain the complete code of the fuzzer we developed earlier. Make sure to copy the entire content of the file into the project's root directory.
+This tool is for educational and testing purposes only. Always ensure you have permission before testing on any systems you do not own or have explicit permission to test.
