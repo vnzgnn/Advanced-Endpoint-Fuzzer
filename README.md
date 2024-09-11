@@ -16,7 +16,7 @@ Advanced Endpoint Fuzzer is an asynchronous tool designed to discover and test A
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/advanced-endpoint-fuzzer.git
+   git clone https://github.com/vnzgnn/advanced-endpoint-fuzzer.git
    ```
 
 2. Navigate to the project directory:
@@ -36,7 +36,7 @@ Advanced Endpoint Fuzzer is an asynchronous tool designed to discover and test A
 To start fuzzing with default options:
 
 ```
-python fuzzer.py https://api.example.com
+python advanced_endpoint_fuzzer.py https://api.example.com
 ```
 
 ### Advanced Usage
@@ -44,7 +44,7 @@ python fuzzer.py https://api.example.com
 For more control over the fuzzing process:
 
 ```
-python fuzzer.py https://api.example.com --wordlist custom_wordlist.txt --rate-limit 10 --concurrency 5 --output results.json --verbose
+python advanced_endpoint_fuzzer.py https://api.example.com --wordlist custom_wordlist.txt --rate-limit 10 --concurrency 5 --output results.json --verbose
 ```
 
 ### Options
@@ -59,22 +59,12 @@ python fuzzer.py https://api.example.com --wordlist custom_wordlist.txt --rate-l
 For a complete list of options:
 
 ```
-python fuzzer.py --help
+python advanced_endpoint_fuzzer.py --help
 ```
 
 ## Output
 
 The fuzzer provides real-time output during the fuzzing process and a summary at the end. If specified, a detailed JSON report is saved to the output file.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## License
 
