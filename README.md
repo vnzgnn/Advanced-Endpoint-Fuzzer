@@ -1,5 +1,7 @@
 # Advanced Endpoint Fuzzer
 
+![Testo alternativo](https://github.com/vnzgnn/Advanced-Endpoint-Fuzzer/blob/main/advanced_endpoint_fuzzer_logo.jpg)
+
 Advanced Endpoint Fuzzer is an asynchronous tool designed to discover and test API endpoints. It offers high performance, customizable options, and detailed reporting.
 
 ## Features
